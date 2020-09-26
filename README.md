@@ -1,5 +1,5 @@
 
-https://rutvik110.github.io/Social-proof-section/
+
 
 # Frontend Mentor - Social proof section
 
