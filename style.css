@@ -51,6 +51,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     color: hsl(300, 43%, 22%);
+    padding-right: 150px;
 }
 
 .quote p {
@@ -63,7 +64,7 @@ body {
 .reviewtext span {
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     color: hsl(300, 43%, 22%);
 }
 
@@ -141,13 +142,13 @@ body {
     border-radius: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     justify-content: space-between;
     background-color: hsl(300, 24%, 96%);
     align-self: flex-start;
     margin-bottom: 15px;
-    width: 80%;
+    width: 95%;
 }
 
 .review1 .stars {
@@ -160,7 +161,7 @@ body {
     /* margin-left: 30px; */
     flex-basis: auto;
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .review2 {
@@ -175,10 +176,14 @@ body {
     .quote {
         flex-grow: 0;
         padding: 25px 25px;
+        max-width: 370px;
+    }
+    .quote .header {
+        padding-right: 0px;
     }
     .review {
         flex-grow: 1;
-        padding: 25px 5px;
+        padding: 15px 5px;
         width: 250px;
     }
     .stars img {
@@ -187,7 +192,7 @@ body {
     }
     .review1 {
         width: 80%;
-        padding: 3px 25px;
+        padding: 3px 15px;
     }
     .reviewtext span {
         font-size: 12px;
@@ -198,6 +203,10 @@ body {
     .quote {
         text-align: center;
         width: 100%;
+        padding: 10px 50px;
+    }
+    .quote .header {
+        padding-right: 0px;
     }
     .review {
         width: 100%;
@@ -223,6 +232,7 @@ body {
         margin-left: 0;
         flex-basis: auto;
         flex-grow: 1;
+        text-align: center;
     }
     .review {
         margin-top: 30px;
