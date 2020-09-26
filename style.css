@@ -1,0 +1,271 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: auto 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quote {
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: center;
+    max-width: 450px;
+}
+
+.review {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.quote .header {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(300, 43%, 22%);
+}
+
+.quote p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+}
+
+.reviewtext span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+}
+
+.card {
+    margin: 0 10px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 320px;
+    background-color: hsl(300, 43%, 22%);
+    flex-grow: 0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card1 {
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+
+.card2 {
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card3 {
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+.card .card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card .card-head img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card .card-head .info .name {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+
+.card .card-head .info .status {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: hsl(333, 80%, 67%);
+}
+
+.card p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(300, 24%, 96%);
+}
+
+.review1 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-content: space-between;
+    background-color: hsl(300, 24%, 96%);
+    align-self: flex-start;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.review1 .stars {
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.review1 .reviewtext {
+    /* margin-left: 30px; */
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.review2 {
+    align-self: center;
+}
+
+.review3 {
+    align-self: flex-end;
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+    .quote {
+        flex-grow: 0;
+        padding: 25px 25px;
+    }
+    .review {
+        flex-grow: 1;
+        padding: 25px 5px;
+        width: 250px;
+    }
+    .stars img {
+        height: 12px;
+        width: 12px;
+    }
+    .review1 {
+        width: 80%;
+        padding: 3px 25px;
+    }
+    .reviewtext span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .quote {
+        text-align: center;
+        width: 100%;
+    }
+    .review {
+        width: 100%;
+    }
+    .review1 {
+        align-self: center;
+    }
+    .review3 {
+        align-self: center;
+    }
+    .review1 .stars {
+        width: 100%;
+        flex-grow: 1;
+    }
+    .review1 .stars img {
+        height: 12px;
+        width: 12px;
+    }
+    .reviewtext span {
+        font-size: 12px;
+    }
+    .review1 .reviewtext {
+        margin-left: 0;
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    .review {
+        margin-top: 30px;
+    }
+    .quote .header {
+        font-size: 25px;
+    }
+    .quote p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .quote {
+        width: 90%;
+        padding: 20px 20px;
+    }
+    .review {
+        width: 100%;
+        padding: 10px 30px;
+        margin-top: 0;
+    }
+    .quote .header {
+        font-size: 35px;
+    }
+    .quote p {
+        font-size: 17px;
+    }
+    .review1 {
+        width: 100%;
+        padding: 10px;
+    }
+    .review1 .stars img {
+        height: 17px;
+        width: 17px;
+    }
+    .reviewtext span {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:1120px) {
+    body {
+        margin-top: 50px;
+    }
+}
